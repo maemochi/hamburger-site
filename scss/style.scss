@@ -6,7 +6,7 @@
 
 /* Layout
 ==========================*/
-@use "layout/header";
+@use "layout/l-header";
 
 /* Object
 ==========================*/
@@ -15,9 +15,11 @@
 /* Component* -------------------- */
 @use "object/component/button";
 @use "object/component/search-box";
+@use "object/component/title";
 
 /* Project* -------------------- */
-
+@use "object/project/search-form";
+@use "object/project/header";
 
 /* Utility* -------------------- */
 
