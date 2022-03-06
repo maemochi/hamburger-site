@@ -1,0 +1,35 @@
+.p-branch-menu {
+    &__title {
+        font-size: 41px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        color: #3C2A10;
+        padding: 19px 0 19px 10px;
+    }
+    &__text {
+        padding: 0 14px 0px 10px;
+    }
+
+    &__contents {
+        &--first {
+            background-image: url(/images/front-page_article_bg01.jpg);
+            > .c-title {
+                color: #EAEAEA;
+            }
+        }
+        &--second {
+            background-image: url(/images/front-page_article_bg02.jpg);
+        }
+        background-size: cover;
+        min-height: 642px;
+        display: grid;
+        grid-template-rows: 50%;
+        gap: 10px;
+        padding: 10px;
+        margin: 20px;
+    }
+    &__item {
+        background-color: rgba(255,255,255,.8);
+    }
+}
