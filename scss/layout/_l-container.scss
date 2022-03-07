@@ -1,0 +1,8 @@
+@use "../foundation/mixin" as m;
+
+.l-container {
+    @include m.mq(pc) {
+        display: grid;
+        grid-template-columns: 6fr 1fr; //仮
+    }
+}

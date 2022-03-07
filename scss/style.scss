@@ -7,12 +7,17 @@
 /* Layout
 ==========================*/
 @use "layout/l-header";
+@use "layout/l-container";
+@use "layout/l-main";
+@use "layout/l-sidebar";
+@use "layout/l-footer";
 
 /* Object
 ==========================*/
 
 
 /* Component* -------------------- */
+@use "object/component/grid";
 @use "object/component/button";
 @use "object/component/search-box";
 @use "object/component/title";
@@ -22,6 +27,7 @@
 @use "object/project/header";
 @use "object/project/main";
 @use "object/project/branch-menu";
+@use "object/project/sidebar";
 
 /* Utility* -------------------- */
 
