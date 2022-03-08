@@ -1,17 +1,19 @@
+@use "../../foundation/mixin" as m;
+
 .p-branch-menu {
-    &__title {
-        font-size: 41px;
-    }
-    &__subtitle {
-        font-size: 24px;
-        color: #3C2A10;
-        padding: 19px 0 19px 10px;
-    }
-    &__text {
-        padding: 0 14px 0px 10px;
+    @include m.mq(tab) {
+        display: flex;
+        justify-content: center;
     }
 
     &__contents {
+        position: relative;
+        padding: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
         &--first {
             background-image: url(/images/front-page_article_bg01.jpg);
             > .c-title {
@@ -23,11 +25,35 @@
         }
         background-size: cover;
         min-height: 642px;
-        display: grid;
-        grid-template-rows: 50%;
-        gap: 10px;
-        padding: 10px;
-        margin: 20px;
+        min-width: 335px;
+            @include m.mq(tab) {
+                min-height: 681px;
+                min-width: 357px;
+            }
+            @include m.mq(pc) {
+                min-height: 1196px;
+                min-width: 625px;
+            }
+    }
+    &__title {
+        font-size: 41px;
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        @include m.mq(tab) {
+            font-size: 44px;
+        }
+        @include m.mq(pc) {
+            font-size: 80px;
+        }
+    }
+    &__subtitle {
+        font-size: 24px;
+        color: #3C2A10;
+        padding: 19px 0 19px 10px;
+    }
+    &__text {
+        padding: 0 14px 0px 10px;
     }
     &__item {
         background-color: rgba(255,255,255,.8);
