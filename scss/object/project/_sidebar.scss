@@ -1,0 +1,24 @@
+@use "../../foundation/mixin" as m;
+
+.p-sidebar {
+    padding: 172px 0 0 46px;
+    color: #707070;
+    &__menu {
+        display: none;
+        @include m.mq(pc) {
+            display: block;
+            font-size: 34px;
+        }
+    }
+    &__main-menu {
+        font-size: 24px;
+        //color: #707070;
+        padding: 40px 0;
+    }
+    &__sub-menu {
+        font-size: 20px;
+        line-height: 44px;
+        padding-left: 20px;
+    }
+
+}

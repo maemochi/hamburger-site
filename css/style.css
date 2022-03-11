@@ -25,7 +25,7 @@ li {
 @media screen and (min-width: 1025px) {
   .l-container {
     display: grid;
-    grid-template-columns: 6fr 1fr;
+    grid-template-columns: 4fr 1fr;
   }
 }
 
@@ -196,14 +196,12 @@ li {
 }
 .p-branch-menu__contents {
   position: relative;
-  padding: 10px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-size: cover;
   min-height: 642px;
-  min-width: 335px;
 }
 .p-branch-menu__contents--first {
   background-image: url(/images/front-page_article_bg01.jpg);
@@ -217,13 +215,11 @@ li {
 @media screen and (min-width: 600px) {
   .p-branch-menu__contents {
     min-height: 681px;
-    min-width: 357px;
   }
 }
 @media screen and (min-width: 1025px) {
   .p-branch-menu__contents {
     min-height: 1196px;
-    min-width: 625px;
   }
 }
 .p-branch-menu__title {
@@ -252,6 +248,30 @@ li {
 }
 .p-branch-menu__item {
   background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 20px 20px 20px;
+}
+
+.p-sidebar {
+  padding: 172px 0 0 46px;
+  color: #707070;
+}
+.p-sidebar__menu {
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar__menu {
+    display: block;
+    font-size: 34px;
+  }
+}
+.p-sidebar__main-menu {
+  font-size: 24px;
+  padding: 40px 0;
+}
+.p-sidebar__sub-menu {
+  font-size: 20px;
+  line-height: 44px;
+  padding-left: 20px;
 }
 
 /* Foundation

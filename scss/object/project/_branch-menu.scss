@@ -8,7 +8,7 @@
 
     &__contents {
         position: relative;
-        padding: 10px;
+        //padding: 10px;
         margin: 20px;
         display: flex;
         flex-direction: column;
@@ -25,14 +25,14 @@
         }
         background-size: cover;
         min-height: 642px;
-        min-width: 335px;
+        //min-width: 335px;
             @include m.mq(tab) {
                 min-height: 681px;
-                min-width: 357px;
+                //min-width: 357px;
             }
             @include m.mq(pc) {
                 min-height: 1196px;
-                min-width: 625px;
+                //min-width: 625px;
             }
     }
     &__title {
@@ -57,5 +57,6 @@
     }
     &__item {
         background-color: rgba(255,255,255,.8);
+        margin: 0 20px 20px 20px;
     }
 }
