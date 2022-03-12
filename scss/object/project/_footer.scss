@@ -1,0 +1,16 @@
+@use "../../foundation/mixin" as m;
+.p-footer {
+    &__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 39px 0 34px 0;
+    }
+    &__sub-menu {
+        color: #fff;
+    }
+    &__copy {
+        color: #fff;
+        text-align: center;
+    }
+}

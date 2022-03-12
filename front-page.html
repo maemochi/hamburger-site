@@ -12,7 +12,7 @@
     
     <body>
     <div class="l-container">
-        <header class="l-header p-header c-grid__column--1 c-grid__row--1">
+        <header class="l-header p-header">
                 <h2 class="p-header__menu">Menu</h2>
                 <h1 class="c-title p-header__title">Hamburger</h1>
                 <form class="p-search-form">
@@ -21,40 +21,7 @@
                 </form>
         </header>
 
-        <div class="p-main p-main--front c-grid__column--1 c-grid__row--2">
-            <h2 class="c-title p-main--front__title">ダミーサイト</h2>
-        </div>
-
-        <article class="contents c-grid__column--1 c-grid__row--3">
-            <!-- <div class="p-branch-menu"> -->
-                <ul class="p-branch-menu">
-                    <li class="p-branch-menu__contents p-branch-menu__contents--first">
-                        <h2 class="c-title p-branch-menu__title">Take Out</h2>
-                        <dl class="p-branch-menu__item">
-                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
-                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <dl class="p-branch-menu__item">
-                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
-                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                    </li>
-                    <li class="p-branch-menu__contents p-branch-menu__contents--second">
-                        <h2 class="c-title p-branch-menu__title">Eat In</h2>
-                        <dl class="p-branch-menu__item"> 
-                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
-                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <dl class="p-branch-menu__item">
-                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
-                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl> 
-                    </li>
-                </ul>
-            <!-- </div> -->
-        </article>
-
-        <nav class="l-sidebar p-sidebar c-grid__column--2 c-grid__row--1">
+        <nav class="l-sidebar p-sidebar">
             <h2 class="p-sidebar__menu">Menu</h2>
                     <ul><h3 class="p-sidebar__main-menu">バーガー</h3>
                         <li class="p-sidebar__sub-menu"><a href="#">ハンバーガー</a></li>
@@ -82,18 +49,52 @@
                     </ul>
         </nav>
 
-        <section class="access c-grid__column--1 c-grid__row--4">
-            <h2>見出しが入ります</h2>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <div class="map"></div>
+    <div class="l-content">
+        <div class="p-main p-main--front">
+            <h2 class="c-title p-main--front__title">ダミーサイト</h2>
+        </div>
+
+        <article>
+                <ul class="p-branch-menu">
+                    <li class="p-branch-menu__contents p-branch-menu__contents--first">
+                        <h2 class="c-title p-branch-menu__title">Take Out</h2>
+                        <dl class="p-branch-menu__item">
+                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
+                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl class="p-branch-menu__item">
+                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
+                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                    </li>
+                    <li class="p-branch-menu__contents p-branch-menu__contents--second">
+                        <h2 class="c-title p-branch-menu__title">Eat In</h2>
+                        <dl class="p-branch-menu__item"> 
+                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
+                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl class="p-branch-menu__item">
+                            <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
+                            <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl> 
+                    </li>
+                </ul>
+        </article>
+
+        <section class="p-access">
+            <h2 class="c-title p-access__title">見出しが入ります</h2>
+            <p class="p-access__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <!-- <div class="p-access__map"></div> -->
         </section>
 
-        <footer class="l-footer c-grid__column--1 c-grid__row--5">
-            <ul class="footer__menu">
-                <li><a href="#">ショップ情報</a></li>
-                <li><a href="#">ヒストリー</a></li>
+    </div><!--.l-content-->
+
+        <footer class="l-footer p-footer">
+            <ul class="p-footer__menu">
+                <li><a class="p-footer__sub-menu" href="#">ショップ情報</a></li>
+                <li><a class="p-footer__sub-menu" href="#">ヒストリー</a></li>
             </ul>
-            <p><small>&copy; Copyright: RaiseTech</small></p>
+            <p class="p-footer__copy"><small>&copy; Copyright: RaiseTech</small></p>
         </footer>
     </div>
 

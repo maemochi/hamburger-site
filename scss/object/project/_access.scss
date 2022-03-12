@@ -1,0 +1,20 @@
+@use "../../foundation/mixin" as m;
+
+.p-access {
+        background-image: url(/images/front-page_map.jpg);
+        //background-color: rgba(221,221,221,.6);
+        min-height: 691px;
+        &__title {
+            font-size: 30px;
+            @include m.mq(pc) {
+                font-size: 36px;
+            }
+        }
+        &__text {
+            color: #fff;
+            font-size: 14px;
+            @include m.mq(pc) {
+                font-size: 16px;
+            }
+        }
+}
