@@ -10,6 +10,15 @@
             font-size: 34px;
         }
     }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        @include m.mq(pc) {
+            display: none;
+        }
+    }
     &__main-menu {
         font-size: 24px;
         //color: #707070;

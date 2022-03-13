@@ -7,7 +7,6 @@
 /* Layout
 ==========================*/
 @use "layout/l-header";
-@use "layout/l-container";
 @use "layout/l-main";
 @use "layout/l-sidebar";
 @use "layout/l-footer";
@@ -20,6 +19,8 @@
 @use "object/component/button";
 @use "object/component/search-box";
 @use "object/component/title";
+@use "object/component/cover";
+@use "object/component/line";
 
 /* Project* -------------------- */
 @use "object/project/search-form";

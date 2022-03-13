@@ -1,5 +1,13 @@
-html, body {
+body {
   font-family: "M PLUS 1p", sans-serif;
+  position: relative;
+}
+@media screen and (min-width: 1025px) {
+  body {
+    display: grid;
+    grid-template-columns: auto 367px;
+    grid-template-rows: 217px auto 150px;
+  }
 }
 
 h1, h2, h3 {
@@ -22,12 +30,8 @@ li {
   background-color: #FFF7EF;
 }
 
-@media screen and (min-width: 1025px) {
-  .l-container {
-    display: grid;
-    grid-template-columns: auto 367px;
-    grid-template-rows: 217px auto 150px;
-  }
+.l-main-wrapper {
+  background: #fff;
 }
 
 .l-sidebar {
@@ -36,12 +40,26 @@ li {
   background-color: #F2EDE9;
   z-index: 1000;
   width: 328px;
-  position: absolute;
+  position: fixed;
+  height: 100%;
+  overflow: scroll;
   top: 0;
+  right: -367px;
+  transition: 0.4s;
+}
+.l-sidebar.open {
+  right: 0;
+  transition: 0.4s;
+}
+@media screen and (min-width: 600px) {
+  .l-sidebar {
+    width: 367px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
     position: static;
+    overflow: visible;
   }
 }
 
@@ -64,6 +82,31 @@ li {
 
 .c-title {
   color: #fff;
+}
+
+.c-cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: block;
+  z-index: -100;
+}
+.c-cover.active {
+  z-index: 100;
+}
+
+.c-line {
+  width: 32px;
+  height: 4px;
+  background: #707070;
+  display: block;
+}
+.c-line--deg45 {
+  transform: rotate(45deg);
+}
+.c-line--deg135 {
+  transform: rotate(135deg);
 }
 
 @media screen and (min-width: 1025px) {
@@ -124,6 +167,7 @@ li {
   position: absolute;
   top: 14px;
   right: 16px;
+  cursor: pointer;
 }
 @media screen and (min-width: 600px) {
   .p-header__menu {
@@ -149,6 +193,17 @@ li {
   .p-sidebar__menu {
     display: block;
     font-size: 34px;
+  }
+}
+.p-sidebar__close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar__close {
+    display: none;
   }
 }
 .p-sidebar__main-menu {

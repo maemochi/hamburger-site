@@ -6,11 +6,23 @@
     background-color: #F2EDE9;
     z-index: 1000;
     width: 328px;
-    position: absolute;
+    position: fixed;
+    height: 100%;
+    overflow: scroll;
     top: 0;
-    //right: -328px;
+    //right: 0;
+    right: -367px;
+    transition: .4s;
+    &.open {
+        right: 0;
+        transition: .4s;
+    }
+    @include m.mq(tab) {
+        width: 367px;
+    }
 
     @include m.mq(pc) {
         position: static;
+        overflow: visible;
     }
 }
