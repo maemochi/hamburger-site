@@ -1,4 +1,4 @@
-body {
+html, body {
   font-family: "M PLUS 1p", sans-serif;
 }
 
@@ -34,6 +34,15 @@ li {
   grid-row: 1/3;
   grid-column: 2/3;
   background-color: #F2EDE9;
+  z-index: 1000;
+  width: 328px;
+  position: absolute;
+  top: 0;
+}
+@media screen and (min-width: 1025px) {
+  .l-sidebar {
+    position: static;
+  }
 }
 
 .l-footer {
@@ -251,7 +260,6 @@ li {
 
 .p-access {
   background-image: url(/images/front-page_map.jpg);
-  background-color: rgba(221, 221, 221, 0.6);
   min-height: 691px;
 }
 .p-access__title {
