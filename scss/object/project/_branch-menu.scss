@@ -47,6 +47,14 @@
             font-size: 80px;
         }
     }
+    &__line {
+        position: absolute;
+        top: 86px;
+        left: 13.5px;
+        @include m.mq(pc) {
+            width: 63px;
+        }
+    }
     &__subtitle {
         font-size: 24px;
         color: #3C2A10;

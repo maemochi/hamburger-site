@@ -11,7 +11,7 @@
     </head>
     
     <body>
-        <div class="c-cover"></div> <!--.c-cover用-->
+        <div class="c-cover c-cover__overlay"></div> <!--.c-cover__overlay用-->
         <header class="l-header p-header">
                 <h2 class="p-header__menu">Menu</h2>
                 <h1 class="c-title p-header__title">Hamburger</h1>
@@ -60,6 +60,7 @@
                 <ul class="p-branch-menu">
                     <li class="p-branch-menu__contents p-branch-menu__contents--first">
                         <h2 class="c-title p-branch-menu__title">Take Out</h2>
+                        <span class="c-line p-branch-menu__line"></span>
                         <dl class="p-branch-menu__item">
                             <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
                             <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
@@ -71,6 +72,7 @@
                     </li>
                     <li class="p-branch-menu__contents p-branch-menu__contents--second">
                         <h2 class="c-title p-branch-menu__title">Eat In</h2>
+                        <span class="c-line p-branch-menu__line"></span>
                         <dl class="p-branch-menu__item"> 
                             <dt><h3 class="c-title p-branch-menu__subtitle">Take Out</h3></dt>
                             <dd class="p-branch-menu__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
@@ -84,19 +86,23 @@
         </article>
 
         <section class="p-access">
+            <div class="c-cover c-cover--light p-access__cover p-access__cover--first"></div>
+            <div class="c-cover c-cover--light p-access__cover p-access__cover--second"></div>
             <h2 class="c-title p-access__title">見出しが入ります</h2>
-            <p class="p-access__text">テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <!-- <div class="p-access__map"></div> -->
+            <span class="c-line p-access__line"></span>
+            <p class="p-access__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
         </section>
     </main>
 
         <footer class="l-footer p-footer">
             <ul class="p-footer__menu">
                 <li><a class="p-footer__sub-menu" href="#">ショップ情報</a></li>
+                <span class="c-line c-line--vertical p-footer__line"></span>
                 <li><a class="p-footer__sub-menu" href="#">ヒストリー</a></li>
             </ul>
-            <p class="p-footer__copy"><small>&copy; Copyright: RaiseTech</small></p>
+            <p class="p-footer__copy">&copy; Copyright: RaiseTech</p>
         </footer>
+        <div class="c-cover"></div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="/script.js"></script>

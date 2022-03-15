@@ -1,5 +1,6 @@
 @use "../../foundation/mixin" as m;
 .p-footer {
+    background-image: url(/images/footer_bg.jpg);
     &__menu {
         display: flex;
         justify-content: center;
@@ -12,5 +13,10 @@
     &__copy {
         color: #fff;
         text-align: center;
+        font-size: 14px;
+    }
+    &__line {
+        width: 20px;
+        height: 1px;
     }
 }
