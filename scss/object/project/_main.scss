@@ -5,10 +5,13 @@
     align-items: center;
     &--front {
         background-image: url(/images/front-page_bg_sp.jpg);
+        //background-image: url('../images/front-page_bg_sp/jpg');
         height: 285px;
         background-size: cover;
+        background-position: right;
         @include m.mq(tab) {
-            background-image: url(/images/front-page_bg_pc.jpg);     
+            background-image: url(/images/front-page_bg_pc.jpg);
+            //background-image: url('../images/front-page_bg_pc/jpg');     
         }
         @include m.mq(pc) {
             height: 530px;

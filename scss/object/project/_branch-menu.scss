@@ -8,7 +8,6 @@
 
     &__contents {
         position: relative;
-        //padding: 10px;
         margin: 20px;
         display: flex;
         flex-direction: column;
@@ -16,23 +15,23 @@
 
         &--first {
             background-image: url(/images/front-page_article_bg01.jpg);
+            background-position: center;
             > .c-title {
                 color: #EAEAEA;
             }
         }
         &--second {
             background-image: url(/images/front-page_article_bg02.jpg);
+            background-position: center;
         }
         background-size: cover;
         min-height: 642px;
-        //min-width: 335px;
             @include m.mq(tab) {
                 min-height: 681px;
-                //min-width: 357px;
+                width: 40%;
             }
             @include m.mq(pc) {
-                min-height: 1196px;
-                //min-width: 625px;
+                min-height: 1000px;
             }
     }
     &__title {
@@ -45,6 +44,8 @@
         }
         @include m.mq(pc) {
             font-size: 80px;
+            top: 20px;
+            left: 19px;
         }
     }
     &__line {
@@ -53,18 +54,35 @@
         left: 13.5px;
         @include m.mq(pc) {
             width: 63px;
+            top: 160.5px;
+            left: 26.5px;
+        }
+        &--first {
+            display: none;
+            @include m.mq(tab) {
+                display: block;
+            }
         }
     }
     &__subtitle {
-        font-size: 24px;
+        font-size: 22px;
         color: #3C2A10;
         padding: 19px 0 19px 10px;
+        @include m.mq(tab) {
+            font-size: 24px;
+        }
     }
     &__text {
-        padding: 0 14px 0px 10px;
+        padding: 0 14px 23px 10px;
+        font-size: 16px;
+        min-height: 70px;
     }
     &__item {
         background-color: rgba(255,255,255,.8);
         margin: 0 20px 20px 20px;
+        min-height: 25%;
+        @include m.mq(pc) {
+            min-height: 15%;
+        }
     }
 }
