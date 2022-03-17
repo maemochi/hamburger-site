@@ -5,7 +5,8 @@ body {
     position: relative;
     @include m.mq(pc) {
         display: grid;
-        grid-template-columns: auto 367px;
+        // grid-template-columns: auto 367px;
+        grid-template-columns: 4fr 1fr;
         grid-template-rows: 217px auto 150px;
     }
 }

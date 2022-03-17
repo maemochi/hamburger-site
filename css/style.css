@@ -5,7 +5,7 @@ body {
 @media screen and (min-width: 1025px) {
   body {
     display: grid;
-    grid-template-columns: auto 367px;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 217px auto 150px;
   }
 }
@@ -44,7 +44,7 @@ li {
   height: 100%;
   overflow: scroll;
   top: 0;
-  right: -367px;
+  right: -500px;
   transition: 0.4s;
 }
 .l-sidebar.open {
@@ -53,7 +53,7 @@ li {
 }
 @media screen and (min-width: 600px) {
   .l-sidebar {
-    width: 367px;
+    width: clamp(300px, 44%, 367px);
   }
 }
 @media screen and (min-width: 1025px) {
@@ -260,15 +260,25 @@ li {
   }
 }
 
+.p-branch-menu {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 4.167vw, 80px);
+  padding: 20px;
+}
 @media screen and (min-width: 600px) {
   .p-branch-menu {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    padding-top: clamp(40px, 6.667vw, 120px);
+    padding-bottom: clamp(40px, 6.667vw, 120px);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .p-branch-menu__contents {
   position: relative;
-  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -289,7 +299,7 @@ li {
 @media screen and (min-width: 600px) {
   .p-branch-menu__contents {
     min-height: 681px;
-    width: 40%;
+    width: 43%;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -367,6 +377,8 @@ li {
   background-size: cover;
   min-height: 691px;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 600px) {
   .p-access {
@@ -379,62 +391,38 @@ li {
   }
 }
 .p-access__title {
-  position: absolute;
-  top: 40px;
-  left: 10%;
+  margin-top: clamp(40px, 6.667vw, 83px);
+  margin-left: clamp(40px, 6.667vw, 120px);
   z-index: 300;
   font-size: 30px;
-}
-@media screen and (min-width: 600px) {
-  .p-access__title {
-    left: 5%;
-  }
 }
 @media screen and (min-width: 1025px) {
   .p-access__title {
     font-size: 36px;
-    top: 83px;
-    left: 5%;
   }
 }
 .p-access__line {
-  position: absolute;
-  top: 102px;
-  left: 10%;
   z-index: 300;
   width: 75px;
   height: 2px;
-}
-@media screen and (min-width: 600px) {
-  .p-access__line {
-    left: 5%;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-access__line {
-    top: 189.5px;
-  }
+  margin-top: clamp(20px, 6.667vw, 55px);
+  margin-bottom: clamp(20px, 6.667vw, 55px);
+  margin-left: clamp(40px, 6.667vw, 120px);
 }
 .p-access__text {
-  position: absolute;
-  top: 80px;
   z-index: 300;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   line-height: 33px;
-  padding: 10%;
-}
-@media screen and (min-width: 600px) {
-  .p-access__text {
-    padding: 5%;
-  }
+  padding-left: clamp(40px, 6.667vw, 120px);
+  padding-right: clamp(40px, 6.667vw, 120px);
+  padding-bottom: 5%;
 }
 @media screen and (min-width: 1025px) {
   .p-access__text {
     font-size: 16px;
     max-width: 55%;
-    top: 200px;
   }
 }
 .p-access__cover {

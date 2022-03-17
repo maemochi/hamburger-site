@@ -11,14 +11,15 @@
     overflow: scroll;
     top: 0;
     //right: 0;
-    right: -367px;
+    right: -500px;
     transition: .4s;
     &.open {
         right: 0;
         transition: .4s;
     }
     @include m.mq(tab) {
-        width: 367px;
+        // width: 367px;
+        width: clamp(300px, 44%, 367px);
     }
 
     @include m.mq(pc) {

@@ -6,6 +6,8 @@
         background-size: cover;
         min-height: 691px;
         position: relative;
+        display: flex;
+        flex-direction: column;
         @include m.mq(tab) {
             min-height: 415px;
         }
@@ -13,50 +15,34 @@
             min-height: 649px;
         }
         &__title {
-            position: absolute;
-            top: 40px;
-            left: 10%;
+            margin-top: clamp(40px, 6.667vw, 83px);
+            margin-left: clamp(40px, 6.667vw, 120px);
             z-index: 300;
             font-size: 30px;
-            @include m.mq(tab) {
-                left: 5%;
-            }
             @include m.mq(pc) {
                 font-size: 36px;
-                top: 83px;
-                left: 5%;
             }
         }
         &__line {
-            position: absolute;
-            top: 102px;
-            left: 10%;
             z-index: 300;
             width: 75px;
             height: 2px;
-            @include m.mq(tab) {
-                left: 5%;
-            }
-            @include m.mq(pc) {
-                top: 189.5px;
-            }
+            margin-top: clamp(20px, 6.667vw , 55px);
+            margin-bottom: clamp(20px, 6.667vw , 55px);
+            margin-left: clamp(40px, 6.667vw, 120px);
         }
         &__text {
-            position: absolute;
-            top: 80px;
             z-index: 300;
             color: #fff;
             font-size: 14px;
             font-weight: bold;
             line-height: 33px;
-            padding: 10%;
-            @include m.mq(tab) {
-                padding: 5%;
-            }
+            padding-left: clamp(40px, 6.667vw, 120px);
+            padding-right: clamp(40px, 6.667vw, 120px);
+            padding-bottom: 5%;
             @include m.mq(pc) {
                 font-size: 16px;
                 max-width: 55%;
-                top: 200px;
             }
         }
         
