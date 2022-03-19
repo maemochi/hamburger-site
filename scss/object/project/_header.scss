@@ -11,9 +11,11 @@
     &__title {
         color: #707070;
         font-size: 40px;
+        transition: .3s;
         padding: 40px 0;
         @include m.mq(pc) {
             font-size: 64px;
+            transition: .3s;
             text-align: left;
             padding: 0 0 0 65px;
         }
@@ -21,13 +23,14 @@
     &__menu {
         color: #707070;
         font-size: 20px;
+        transition: .3s;
         position: absolute;
         top: 14px;
         right: 16px;
         cursor: pointer;
-        //padding: 14px 16px 0 0;
         @include m.mq(tab) {
             font-size: 34px;
+            transition: .3s;
             top: 18px;
             right: 26px;
         }

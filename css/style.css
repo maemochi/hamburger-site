@@ -5,7 +5,7 @@ body {
 @media screen and (min-width: 1025px) {
   body {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 5fr 1fr;
     grid-template-rows: 217px auto 150px;
   }
 }
@@ -39,22 +39,17 @@ li {
   grid-column: 2/3;
   background-color: #F2EDE9;
   z-index: 1000;
-  width: 328px;
+  min-width: 328px;
   position: fixed;
   height: 100%;
   overflow: scroll;
   top: 0;
-  right: -500px;
+  right: -1000px;
   transition: 0.4s;
 }
 .l-sidebar.open {
   right: 0;
   transition: 0.4s;
-}
-@media screen and (min-width: 600px) {
-  .l-sidebar {
-    width: clamp(300px, 44%, 367px);
-  }
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
@@ -127,23 +122,27 @@ li {
   color: #707070;
   height: 46px;
   width: 78px;
+  transition: 0.3s;
   border-radius: 10px;
   font-weight: bold;
 }
 @media screen and (min-width: 600px) {
   .p-search-form__button {
     width: 136px;
+    transition: 0.3s;
   }
 }
 .p-search-form__search-box {
   height: 46px;
   width: 230px;
+  transition: 0.3s;
   padding: 0 10px 0 40px;
   margin: 0 10px 0 0;
 }
 @media screen and (min-width: 600px) {
   .p-search-form__search-box {
     width: 396px;
+    transition: 0.3s;
   }
 }
 
@@ -160,11 +159,13 @@ li {
 .p-header__title {
   color: #707070;
   font-size: 40px;
+  transition: 0.3s;
   padding: 40px 0;
 }
 @media screen and (min-width: 1025px) {
   .p-header__title {
     font-size: 64px;
+    transition: 0.3s;
     text-align: left;
     padding: 0 0 0 65px;
   }
@@ -172,6 +173,7 @@ li {
 .p-header__menu {
   color: #707070;
   font-size: 20px;
+  transition: 0.3s;
   position: absolute;
   top: 14px;
   right: 16px;
@@ -180,6 +182,7 @@ li {
 @media screen and (min-width: 600px) {
   .p-header__menu {
     font-size: 34px;
+    transition: 0.3s;
     top: 18px;
     right: 26px;
   }
@@ -310,25 +313,19 @@ li {
 .p-branch-menu__title {
   font-size: 41px;
   position: absolute;
-  top: 11px;
-  left: 10px;
+  top: clamp(11px, 1.834vw, 20px);
+  left: clamp(10px, 1.667vw, 19px);
 }
 @media screen and (min-width: 600px) {
   .p-branch-menu__title {
-    font-size: 44px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  .p-branch-menu__title {
-    font-size: 80px;
-    top: 20px;
-    left: 19px;
+    font-size: clamp(44px, 7.334vw, 80px);
   }
 }
 .p-branch-menu__line {
   position: absolute;
-  top: 86px;
-  left: 13.5px;
+  width: clamp(33px, 6.875vw, 63px);
+  top: clamp(86px, 14.33vw, 160.5px);
+  left: clamp(13.5px, 2.813vw, 26.5px);
 }
 @media screen and (min-width: 1025px) {
   .p-branch-menu__line {
@@ -446,6 +443,7 @@ li {
 
 .p-footer {
   background-image: url(../images/footer_bg.jpg);
+  background-size: cover;
 }
 .p-footer__menu {
   display: flex;
