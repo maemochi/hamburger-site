@@ -227,6 +227,11 @@ li {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1025px) {
+  .p-sidebar__button {
+    display: none;
+  }
+}
 .p-sidebar__close {
   position: absolute;
   background: #707070;
