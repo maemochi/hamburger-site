@@ -4,7 +4,7 @@ $(function() {
         $('.c-cover__overlay').toggleClass('active');
         $('body').css('overflow','hidden');
     });
-    $('.p-sidebar__close').on('click', function() {
+    $('.p-sidebar__button').on('click', function() {
         $('.l-sidebar').removeClass('open');
         $('.c-cover__overlay').removeClass('active');
         $('body').css('overflow','visible');

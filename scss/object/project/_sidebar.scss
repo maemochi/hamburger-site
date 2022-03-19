@@ -10,12 +10,20 @@
             font-size: 34px;
         }
     }
-    &__close {
+    &__button {
         position: absolute;
         top: 25px;
         right: 25px;
-        background: #707070;
+        height: 50px;
+        width: 50px;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__close {
+        position: absolute;
+        background: #707070;
         @include m.mq(pc) {
             display: none;
         }

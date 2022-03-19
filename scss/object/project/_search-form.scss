@@ -14,7 +14,10 @@
         font-weight: bold;
         @include m.mq(tab) {
             width: 136px;
-            transition: .3s;
+            transition: .0s;
+        }
+        @include m.mq(pc) {
+            width: clamp(78px, 7.61vw, 136px);
         }
     }
     &__search-box {
@@ -25,7 +28,10 @@
         margin: 0 10px 0 0;
         @include m.mq(tab) {
             width: 396px;
-            transition: .3s;
+            transition: .0s;
+        }
+        @include m.mq(pc) {
+            width: clamp(300px, 29.268vw, 396px);
         }
     }
 }

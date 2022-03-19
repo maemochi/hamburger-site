@@ -14,10 +14,12 @@
         transition: .3s;
         padding: 40px 0;
         @include m.mq(pc) {
-            font-size: 64px;
-            transition: .3s;
+            // font-size: 64px;
+            font-size: clamp(43px, 4.195vw, 64px);
+            transition: .0s;
             text-align: left;
-            padding: 0 0 0 65px;
+            // padding: 0 0 0 65px;
+            padding-left: 4%;
         }
     }
     &__menu {

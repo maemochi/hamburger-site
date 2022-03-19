@@ -129,7 +129,12 @@ li {
 @media screen and (min-width: 600px) {
   .p-search-form__button {
     width: 136px;
-    transition: 0.3s;
+    transition: 0s;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-search-form__button {
+    width: clamp(78px, 7.61vw, 136px);
   }
 }
 .p-search-form__search-box {
@@ -142,7 +147,12 @@ li {
 @media screen and (min-width: 600px) {
   .p-search-form__search-box {
     width: 396px;
-    transition: 0.3s;
+    transition: 0s;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-search-form__search-box {
+    width: clamp(300px, 29.268vw, 396px);
   }
 }
 
@@ -164,10 +174,10 @@ li {
 }
 @media screen and (min-width: 1025px) {
   .p-header__title {
-    font-size: 64px;
-    transition: 0.3s;
+    font-size: clamp(43px, 4.195vw, 64px);
+    transition: 0s;
     text-align: left;
-    padding: 0 0 0 65px;
+    padding-left: 4%;
   }
 }
 .p-header__menu {
@@ -206,12 +216,20 @@ li {
     font-size: 34px;
   }
 }
-.p-sidebar__close {
+.p-sidebar__button {
   position: absolute;
   top: 25px;
   right: 25px;
-  background: #707070;
+  height: 50px;
+  width: 50px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-sidebar__close {
+  position: absolute;
+  background: #707070;
 }
 @media screen and (min-width: 1025px) {
   .p-sidebar__close {
@@ -326,13 +344,6 @@ li {
   width: clamp(33px, 6.875vw, 63px);
   top: clamp(86px, 14.33vw, 160.5px);
   left: clamp(13.5px, 2.813vw, 26.5px);
-}
-@media screen and (min-width: 1025px) {
-  .p-branch-menu__line {
-    width: 63px;
-    top: 160.5px;
-    left: 26.5px;
-  }
 }
 .p-branch-menu__line--first {
   display: none;
