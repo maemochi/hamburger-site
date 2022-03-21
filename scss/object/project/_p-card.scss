@@ -1,0 +1,33 @@
+@use "../../foundation/mixin" as m;
+
+.p-card {
+    background-color: #3C2B1C;
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        font-size: 20px;
+        margin-top: clamp(30px, 6.25vw, 53px);
+        margin-bottom: clamp(30px, 6.25vw, 53px);
+        margin-left: clamp(17px, 3.542vw, 63px);
+    }
+    &__subtitle {
+        margin-left: clamp(17px, 3.542vw, 63px);
+    }
+    &__text {
+        color: #fff;
+        margin-left: clamp(17px, 3.542vw, 63px);
+    }
+    &__button {
+        background: #fff;
+        color: #707070;
+        height: 42px;
+        width: 163px;
+        border-radius: 50px;
+        font-size: 16px;
+        @include m.mq(tab) {
+            width: clamp(163px, 27.167vw, 292px);
+            height: clamp(42px, 7vw, 76px);
+        }
+    }
+}

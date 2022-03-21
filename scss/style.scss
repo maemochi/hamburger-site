@@ -21,6 +21,8 @@
 @use "object/component/title";
 @use "object/component/cover";
 @use "object/component/line";
+@use "object/component/card";
+@use "object/component/text";
 
 /* Project* -------------------- */
 @use "object/project/search-form";
@@ -30,5 +32,8 @@
 @use "object/project/branch-menu";
 @use "object/project/access";
 @use "object/project/footer";
+@use "object/project/p-card";
+@use "object/project/description";
+@use "object/project/container";
 
 /* Utility* -------------------- */

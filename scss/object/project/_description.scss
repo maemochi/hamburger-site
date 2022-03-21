@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as m;
+
+.p-description {
+    &__title {
+        font-size: 28px;
+        color: #3C2A10;
+        @include m.mq(tab) {
+            font-size: 36px;
+        }
+    }
+    &__text {
+        color: #3C2A10;
+    }
+}
