@@ -2,20 +2,51 @@
 
 .p-card {
     background-color: #3C2B1C;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @include m.mq(tab) {
+        flex-direction: row;
+        position: relative;
+    }
+    &__img-box {
+        @include m.mq(tab) {
+            width: 50%;
+            padding-bottom: 50%;
+            height: 0;
+            position: relative;
+        }
+    }
     &__img {
         width: 100%;
+        object-fit: cover;
+        @include m.mq(tab) {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
     }
+    &__text-box {
+        @include m.mq(tab) {
+            width: 50%;
+        }
+    }
+
     &__title {
         font-size: 20px;
+        text-align: left;
         margin-top: clamp(30px, 6.25vw, 53px);
         margin-bottom: clamp(30px, 6.25vw, 53px);
         margin-left: clamp(17px, 3.542vw, 63px);
     }
     &__subtitle {
+        text-align: left;
         margin-left: clamp(17px, 3.542vw, 63px);
     }
     &__text {
         color: #fff;
+        text-align: left;
         margin-left: clamp(17px, 3.542vw, 63px);
     }
     &__button {
@@ -25,6 +56,8 @@
         width: 163px;
         border-radius: 50px;
         font-size: 16px;
+        margin-top: clamp(40px, 6.667vw, 60px);
+        margin-bottom: clamp(40px, 6.667vw, 60px);
         @include m.mq(tab) {
             width: clamp(163px, 27.167vw, 292px);
             height: clamp(42px, 7vw, 76px);
