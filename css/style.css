@@ -560,6 +560,11 @@ li {
     aspect-ratio: 1/1;
   }
 }
+@media screen and (min-width: 1400px) {
+  .p-card__img {
+    aspect-ratio: 4/3;
+  }
+}
 .p-card__text-box {
   padding-left: clamp(17px, 3.542vw, 63px);
   padding-right: clamp(17px, 3.542vw, 63px);
@@ -580,8 +585,15 @@ li {
 }
 .p-card__text {
   text-align: left;
-  margin: 8% 0;
-  max-height: 100px;
+  margin-top: 10px;
+  margin-right: 70px;
+  max-height: 114px;
+}
+@media screen and (min-width: 600px) {
+  .p-card__text {
+    margin-right: 10%;
+    margin-top: 10px;
+  }
 }
 .p-card__text p {
   color: #fff;
@@ -593,12 +605,20 @@ li {
   width: 163px;
   border-radius: 50px;
   font-size: 16px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 600px) {
   .p-card__button {
     width: clamp(163px, 15.902vw, 292px);
     height: clamp(42px, 4.098vw, 76px);
+    margin-bottom: 25px;
+    margin-top: 8%;
+  }
+}
+@media screen and (min-width: 830px) {
+  .p-card__button {
+    margin-top: 20%;
   }
 }
 
@@ -620,8 +640,16 @@ li {
 }
 @media screen and (min-width: 600px) {
   .p-container {
+    padding-left: clamp(20px, 3.334vw, 40px);
+    padding-right: clamp(20px, 3.334vw, 40px);
     padding-top: clamp(36px, 6vw, 60px);
     padding-bottom: clamp(105px, 17.5vw, 150px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-container {
+    padding-left: clamp(40px, 3.334vw, 100px);
+    padding-right: clamp(40px, 3.334vw, 100px);
   }
 }
 
