@@ -580,9 +580,30 @@ li {
   font-size: 20px;
   text-align: left;
   margin: 8% 0;
+  white-space: nowrap;
+}
+@media screen and (min-width: 1025px) {
+  .p-card__title {
+    font-size: clamp(20px, 1.951vw, 34px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-card__title {
+    font-size: 34px;
+  }
 }
 .p-card__subtitle {
   text-align: left;
+}
+@media screen and (min-width: 1025px) {
+  .p-card__subtitle {
+    font-size: clamp(16px, 1.561vw, 24px);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-card__subtitle {
+    font-size: 24px;
+  }
 }
 .p-card__text {
   text-align: left;
@@ -620,6 +641,11 @@ li {
 @media screen and (min-width: 830px) {
   .p-card__button {
     margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-card__button {
+    margin-top: clamp(40px, 3.334vw, 60px);
   }
 }
 

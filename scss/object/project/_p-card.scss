@@ -34,11 +34,24 @@
         font-size: 20px;
         text-align: left;
         margin: 8% 0;
+        white-space: nowrap;
+        @include m.mq(pc) {
+            font-size: clamp(20px, 1.951vw, 34px);
+        }
+        @include m.mq(xl) {
+            font-size: 34px;
+        }
         // margin-top: clamp(30px, 6.25vw, 53px);
         // margin-bottom: clamp(30px, 6.25vw, 53px);
     }
     &__subtitle {
         text-align: left;
+        @include m.mq(pc) {
+            font-size: clamp(16px, 1.561vw, 24px);
+        }
+        @include m.mq(xl) {
+            font-size: 24px;
+        }
     }
     &__text {
         text-align: left;
@@ -70,6 +83,9 @@
         }
         @include m.mq(md) {
             margin-top: 20%;
+        }
+        @include m.mq(xl) {
+            margin-top: clamp(40px, 3.334vw, 60px);
         }
     }
 }
