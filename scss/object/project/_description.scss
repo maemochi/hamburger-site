@@ -1,9 +1,17 @@
 @use "../../foundation/mixin" as m;
 
 .p-description {
+    margin-bottom: 15px;
+    @include m.mq(tab) {
+        margin-bottom: 30px;
+    }
+    @include m.mq(xl) {
+        margin-bottom: 70px;
+    }
     &__title {
         font-size: 28px;
         color: #3C2A10;
+        margin-bottom: 30px;
         @include m.mq(tab) {
             font-size: 36px;
         }

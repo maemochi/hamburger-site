@@ -542,6 +542,7 @@ li {
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
   .p-card {
@@ -622,9 +623,23 @@ li {
   }
 }
 
+.p-description {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 600px) {
+  .p-description {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-description {
+    margin-bottom: 70px;
+  }
+}
 .p-description__title {
   font-size: 28px;
   color: #3C2A10;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 600px) {
   .p-description__title {
