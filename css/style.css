@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "M PLUS 1p", sans-serif;
   position: relative;
@@ -42,7 +43,6 @@ li {
   min-width: 280px;
   position: fixed;
   height: 100%;
-  overflow: scroll;
   top: 0;
   right: -1000px;
   transition: 0.4s;
@@ -127,8 +127,13 @@ li {
 
 .c-scrollbar--hidden {
   overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
 }
 
+/* Chrome, Safari 対応 */
 .c-scrollbar--hidden::-webkit-scrollbar {
   display: none;
 }
