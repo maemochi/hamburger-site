@@ -1,7 +1,7 @@
 @use "../../foundation/mixin" as m;
 
 .p-container {
-    // padding: 30px 20px 60px 20px;
+    padding: 30px 20px 60px 20px;
     @include m.mq(tab) {
         // padding-left: clamp(40px, 6.667vw, 80px);
         // padding-right: clamp(40px, 6.667vw, 80px);

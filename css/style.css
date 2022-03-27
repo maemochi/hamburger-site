@@ -125,6 +125,14 @@ li {
   line-height: 23px;
 }
 
+.c-scrollbar--hidden {
+  overflow: scroll;
+}
+
+.c-scrollbar--hidden::-webkit-scrollbar {
+  display: none;
+}
+
 @media screen and (min-width: 1025px) {
   .p-search-form {
     padding: 0 30px 0 0;
@@ -536,14 +544,6 @@ li {
     position: relative;
   }
 }
-@media screen and (min-width: 600px) {
-  .p-card__img-box {
-    width: 50%;
-    padding-bottom: 50%;
-    height: 0;
-    position: relative;
-  }
-}
 .p-card__img {
   width: 100%;
   -o-object-fit: cover;
@@ -551,32 +551,35 @@ li {
 }
 @media screen and (min-width: 600px) {
   .p-card__img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
+    width: 50%;
+    aspect-ratio: 1/1;
   }
+}
+.p-card__text-box {
+  padding-left: clamp(17px, 3.542vw, 63px);
+  padding-right: clamp(17px, 3.542vw, 63px);
 }
 @media screen and (min-width: 600px) {
   .p-card__text-box {
     width: 50%;
+    height: 0;
   }
 }
 .p-card__title {
   font-size: 20px;
   text-align: left;
-  margin-top: clamp(30px, 6.25vw, 53px);
-  margin-bottom: clamp(30px, 6.25vw, 53px);
-  margin-left: clamp(17px, 3.542vw, 63px);
+  margin: 8% 0;
 }
 .p-card__subtitle {
   text-align: left;
-  margin-left: clamp(17px, 3.542vw, 63px);
 }
 .p-card__text {
-  color: #fff;
   text-align: left;
-  margin-left: clamp(17px, 3.542vw, 63px);
+  margin: 8% 0;
+  max-height: 100px;
+}
+.p-card__text p {
+  color: #fff;
 }
 .p-card__button {
   background: #fff;
@@ -585,13 +588,12 @@ li {
   width: 163px;
   border-radius: 50px;
   font-size: 16px;
-  margin-top: clamp(40px, 6.667vw, 60px);
-  margin-bottom: clamp(40px, 6.667vw, 60px);
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 600px) {
   .p-card__button {
-    width: clamp(163px, 27.167vw, 292px);
-    height: clamp(42px, 7vw, 76px);
+    width: clamp(163px, 15.902vw, 292px);
+    height: clamp(42px, 4.098vw, 76px);
   }
 }
 
@@ -608,6 +610,9 @@ li {
   color: #3C2A10;
 }
 
+.p-container {
+  padding: 30px 20px 60px 20px;
+}
 @media screen and (min-width: 600px) {
   .p-container {
     padding-top: clamp(36px, 6vw, 60px);
