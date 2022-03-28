@@ -635,7 +635,7 @@ li {
     width: clamp(163px, 15.902vw, 292px);
     height: clamp(42px, 4.098vw, 76px);
     margin-bottom: 25px;
-    margin-top: 8%;
+    margin-top: 6%;
   }
 }
 @media screen and (min-width: 830px) {
@@ -695,7 +695,57 @@ li {
 }
 
 .p-pagination {
-  display: inline;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination {
+    justify-content: center;
+  }
+}
+.p-pagination__list {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  order: 3;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination__list {
+    display: flex;
+  }
+}
+.p-pagination__pos {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  order: 1;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination__pos {
+    display: block;
+  }
+}
+.p-pagination__button--prev {
+  order: 2;
+}
+.p-pagination__button--prev::after {
+  content: "前へ";
+}
+@media screen and (min-width: 600px) {
+  .p-pagination__button--prev::after {
+    content: "";
+  }
+}
+.p-pagination__button--next {
+  order: 4;
+}
+.p-pagination__button--next::before {
+  content: "次へ";
+}
+@media screen and (min-width: 600px) {
+  .p-pagination__button--next::before {
+    content: "";
+  }
 }
 
 /* Foundation

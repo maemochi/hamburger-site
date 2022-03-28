@@ -1,5 +1,56 @@
 @use "../../foundation/mixin" as m;
 
 .p-pagination {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    @include m.mq(tab) {
+        justify-content: center;
+    }
+    &__list {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        order: 3;
+        display: none;
+        @include m.mq(tab) {
+            display: flex;
+        }
+    }
+    &__pos {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        order: 1;
+        display: none;
+        @include m.mq(tab) {
+            display: block;
+        }
+    }
+    &__button--prev {
+        order: 2;
+        &::after {
+            content: "前へ";
+            @include m.mq(tab) {
+                content: "";
+            }
+        }
+    }
+    &__button--next {
+        order: 4;
+        &::before {
+            content: "次へ";
+            @include m.mq(tab) {
+                content: "";
+            }
+        }
+    }
+    // &__text {
+    //     @include m.mq(tab) {
+    //         display: none;
+    //     }
+    //     &--prev {
+    //         order: 3;
+    //     }
+    //     &--next {
+    //         order: 5;
+    //     }
+    // }
 }
