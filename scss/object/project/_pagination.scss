@@ -46,8 +46,11 @@
         }
     }
     &__button--prev {
-        display: flex;
         order: 2;
+        background-image: url(../images/pagination_prev_icon.svg);
+        width: 20px;
+        height: 20px;
+        position: relative;
         @include m.mq(tab) {
             margin: 0 15px;
         }
@@ -59,11 +62,14 @@
         // }
     }
     &__button--next {
-        display: flex;
         order: 4;
-        img {
-            order: 2;
-        }
+        background-image: url(../images/pagination_next_icon.svg);
+        width: 20px;
+        height: 20px;
+        position: relative;
+        // img {
+        //     order: 2;
+        // }
         @include m.mq(tab) {
             margin: 0 15px;
         }
@@ -75,14 +81,18 @@
         // }
     }
     &__text {
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         @include m.mq(tab) {
             display: none;
         }
         &--prev {
-            margin-left: 8px;
+            left: 25px;
         }
         &--next {
-            margin-right: 8px;
+            right: 25px;
         }
     }
 }

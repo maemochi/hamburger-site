@@ -317,15 +317,16 @@ li {
   }
 }
 .p-main--archive {
-  background-image: url(../images/archive_bg.jpg);
+  background-image: url(../images/archive_bg_sp.jpg);
   height: 283px;
   background-size: cover;
-  background-position: center;
   position: relative;
 }
 @media screen and (min-width: 1025px) {
   .p-main--archive {
     height: 239px;
+    background-image: url(../images/archive_bg_sp.jpg);
+    background-position: center;
   }
 }
 .p-main--archive__cover {
@@ -580,7 +581,11 @@ li {
   font-size: 20px;
   text-align: left;
   margin: 8% 0;
-  white-space: nowrap;
+}
+@media screen and (min-width: 600px) {
+  .p-card__title {
+    white-space: nowrap;
+  }
 }
 @media screen and (min-width: 1025px) {
   .p-card__title {
@@ -749,8 +754,11 @@ li {
   }
 }
 .p-pagination__button--prev {
-  display: flex;
   order: 2;
+  background-image: url(../images/pagination_prev_icon.svg);
+  width: 20px;
+  height: 20px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-pagination__button--prev {
@@ -758,16 +766,22 @@ li {
   }
 }
 .p-pagination__button--next {
-  display: flex;
   order: 4;
-}
-.p-pagination__button--next img {
-  order: 2;
+  background-image: url(../images/pagination_next_icon.svg);
+  width: 20px;
+  height: 20px;
+  position: relative;
 }
 @media screen and (min-width: 600px) {
   .p-pagination__button--next {
     margin: 0 15px;
   }
+}
+.p-pagination__text {
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 @media screen and (min-width: 600px) {
   .p-pagination__text {
@@ -775,10 +789,10 @@ li {
   }
 }
 .p-pagination__text--prev {
-  margin-left: 8px;
+  left: 25px;
 }
 .p-pagination__text--next {
-  margin-right: 8px;
+  right: 25px;
 }
 
 /* Foundation

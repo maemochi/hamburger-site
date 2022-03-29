@@ -40,13 +40,14 @@
     }
 
     &--archive {
-        background-image: url(../images/archive_bg.jpg);
+        background-image: url(../images/archive_bg_sp.jpg);
         height: 283px;
         background-size: cover;
-        background-position: center;
         position: relative;
         @include m.mq(pc) {
             height: 239px;
+            background-image: url(../images/archive_bg_sp.jpg);
+            background-position: center;
         }
         &__cover {
             position: absolute;

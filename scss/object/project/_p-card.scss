@@ -34,7 +34,9 @@
         font-size: 20px;
         text-align: left;
         margin: 8% 0;
-        white-space: nowrap;
+        @include m.mq(tab) {
+            white-space: nowrap;
+        }
         @include m.mq(pc) {
             font-size: clamp(20px, 1.951vw, 34px);
         }
