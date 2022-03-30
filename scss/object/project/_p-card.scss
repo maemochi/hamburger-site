@@ -43,8 +43,6 @@
         @include m.mq(xl) {
             font-size: 34px;
         }
-        // margin-top: clamp(30px, 6.25vw, 53px);
-        // margin-bottom: clamp(30px, 6.25vw, 53px);
     }
     &__subtitle {
         text-align: left;
