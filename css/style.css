@@ -85,6 +85,13 @@ li {
   color: #fff;
   font-weight: bold;
 }
+.c-title--dark {
+  color: #3C2A10;
+  font-weight: bold;
+}
+.c-title--m {
+  font-family: "M PLUS 1p", sans-serif;
+}
 
 .c-cover {
   width: 100%;
@@ -121,6 +128,7 @@ li {
 
 .c-text {
   font-size: 16px;
+  font-style: normal;
   color: #3C2A10;
   line-height: 23px;
 }
@@ -136,6 +144,10 @@ li {
 /* Chrome, Safari 対応 */
 .c-scrollbar--hidden::-webkit-scrollbar {
   display: none;
+}
+
+.c-img {
+  width: 100%;
 }
 
 @media screen and (min-width: 1025px) {
@@ -284,6 +296,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-size: cover;
 }
 @media screen and (min-width: 600px) {
   .p-main {
@@ -311,7 +324,6 @@ li {
 .p-main--front {
   background-image: url(../images/mainvisual-sp@2x.jpg);
   height: 285px;
-  background-size: cover;
   background-position: right;
 }
 @media screen and (min-width: 600px) {
@@ -325,9 +337,8 @@ li {
   }
 }
 .p-main--archive {
-  background-image: url(../images/page-title_arcive@2x.jpg);
+  background-image: url(../images/page-title_archive@2x.jpg);
   height: 283px;
-  background-size: cover;
   position: relative;
 }
 @media screen and (min-width: 1025px) {
@@ -350,6 +361,26 @@ li {
   position: relative;
   z-index: 300;
   padding: 0 0 0 25px;
+}
+.p-main--single {
+  background-image: url(../images/single_bg_sp.jpg);
+  height: 225px;
+}
+@media screen and (min-width: 600px) {
+  .p-main--single {
+    height: 500px;
+    background-image: url(../images/single_bg_tab.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-main--single {
+    background-image: url(../images/single_bg_pc.jpg);
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-main--single__title {
+    font-size: 60px;
+  }
 }
 
 .p-branch-menu {
@@ -801,6 +832,58 @@ li {
 }
 .p-pagination__text--next {
   right: 25px;
+}
+
+.p-quotation {
+  background-color: #F5F5F5;
+  margin-bottom: 30px;
+  padding: 30px 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-quotation {
+    margin-bottom: 60px;
+    padding: 50px 60px 50px 50px;
+  }
+}
+.p-quotation__text {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .p-quotation__text {
+    margin-bottom: 60px;
+  }
+}
+.p-quotation a {
+  color: #4A6C9B;
+  text-decoration: underline;
+}
+
+.p-product {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 600px) {
+  .p-product {
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-product {
+    gap: 40px;
+  }
+}
+.p-product__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40%;
+}
+.p-product__text {
+  max-height: 176px;
 }
 
 /* Foundation
