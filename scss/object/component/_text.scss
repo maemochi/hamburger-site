@@ -1,5 +1,7 @@
+@use "../../foundation/variable" as v;
+
 .c-text {
     font-size: 16px;
-    color: #3C2A10;;
+    color: v.$font-color-dark;
     line-height: 23px;
 }

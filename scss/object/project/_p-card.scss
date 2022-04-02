@@ -1,7 +1,9 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
 
 .p-card {
-    background-color: #3C2B1C;
+    // background-color: #3C2B1C;
+    background-color: v.$content-color;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -63,12 +65,13 @@
             margin-top: 10px;
         }
         p {
-            color: #fff;
+            // color: #fff;
+            color: v.$font-color-light;
         }
     }
     &__button {
         background: #fff;
-        color: #707070;
+        color: v.$font-color-main;
         height: 42px;
         width: 163px;
         border-radius: 50px;

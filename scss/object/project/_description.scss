@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
 
 .p-description {
     margin-bottom: 15px;
@@ -10,13 +11,15 @@
     }
     &__title {
         font-size: 28px;
-        color: #3C2A10;
+        // color: #3C2A10;
+        color: v.$font-color-dark;
         margin-bottom: 30px;
         @include m.mq(tab) {
             font-size: 36px;
         }
     }
     &__text {
-        color: #3C2A10;
+        // color: #3C2A10;
+        color: v.$font-color-dark;
     }
 }

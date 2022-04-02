@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
 
 .p-access {
         z-index: 100;
@@ -33,7 +34,8 @@
         }
         &__text {
             z-index: 300;
-            color: #fff;
+            // color: #fff;
+            color: v.$font-color-light;
             font-size: 14px;
             font-weight: bold;
             line-height: 33px;

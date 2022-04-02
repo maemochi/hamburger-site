@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
 
 .p-header {
     text-align: center;
@@ -9,7 +10,7 @@
     }
 
     &__title {
-        color: #707070;
+        color: v.$font-color-main;
         font-size: 40px;
         transition: .3s;
         padding: 40px 0;
@@ -23,7 +24,7 @@
         }
     }
     &__menu {
-        color: #707070;
+        color: v.$font-color-main;
         font-size: 20px;
         transition: .3s;
         position: absolute;
@@ -41,6 +42,6 @@
         }
     }
     &__button {
-        color: #707070;
+        color: v.$font-color-main;
     }
 }

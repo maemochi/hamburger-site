@@ -1,4 +1,5 @@
 @use "../../foundation/mixin" as m;
+@use "../../foundation/variable" as v;
 
 .p-pagination {
     display: flex;
@@ -27,10 +28,12 @@
                 height: 35px;
                 line-height: 35px;
                 text-align: center;
-                border: 1px solid #707070;
+                border: 1px solid v.$font-color-main;
                 &:hover {
-                    background-color: #3C2B1C;
-                    color: #fff;
+                    // background-color: #3C2B1C;
+                    background-color: v.$content-color;
+                    // color: #fff;
+                    color: v.$font-color-light;
                 }
             }
         }
@@ -38,7 +41,7 @@
     &__page {
         font-family: 'Roboto', sans-serif;
         font-weight: bold;
-        color: #707070;
+        color: v.$font-color-main;
         order: 1;
         display: none;
         @include m.mq(tab) {
