@@ -3,4 +3,7 @@
 .c-title {
    color: v.$font-color-light; 
    font-weight: bold;
+   &--dark {
+      color: v.$font-color-dark;
+   }
 }
