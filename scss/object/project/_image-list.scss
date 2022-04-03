@@ -6,15 +6,11 @@
     display: grid;
     gap: 20px;
     @include m.mq (tab) {
-        display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
     }
     @include m.mq(xl) {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        gap: 20px;
     }
 }

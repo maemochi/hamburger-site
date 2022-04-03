@@ -30,9 +30,7 @@
                 text-align: center;
                 border: 1px solid v.$font-color-main;
                 &:hover {
-                    // background-color: #3C2B1C;
                     background-color: v.$content-color;
-                    // color: #fff;
                     color: v.$font-color-light;
                 }
             }
@@ -57,12 +55,6 @@
         @include m.mq(tab) {
             margin: 0 15px;
         }
-        // &::after {
-        //     content: "前へ";
-        //     @include m.mq(tab) {
-        //         content: "";
-        //     }
-        // }
     }
     &__button--next {
         order: 4;
@@ -70,18 +62,9 @@
         width: 20px;
         height: 20px;
         position: relative;
-        // img {
-        //     order: 2;
-        // }
         @include m.mq(tab) {
             margin: 0 15px;
         }
-        // &::before {
-        //     content: "次へ";
-        //     @include m.mq(tab) {
-        //         content: "";
-        //     }
-        // }
     }
     &__text {
         white-space: nowrap;

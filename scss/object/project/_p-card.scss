@@ -2,7 +2,6 @@
 @use "../../foundation/variable" as v;
 
 .p-card {
-    // background-color: #3C2B1C;
     background-color: v.$content-color;
     text-align: center;
     display: flex;
@@ -65,7 +64,6 @@
             margin-top: 10px;
         }
         p {
-            // color: #fff;
             color: v.$font-color-light;
         }
     }

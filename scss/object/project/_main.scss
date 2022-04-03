@@ -29,7 +29,6 @@
         background-position: right;
         @include m.mq(tab) {
             background-image: url(../images/mainvisual-pc.jpg);
-
         }
         @include m.mq(pc) {
             height: 530px;
