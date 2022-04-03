@@ -82,7 +82,8 @@ li {
   width: min(100%, 429px);
   aspect-ratio: 4/1;
   border-radius: 20px;
-  color: #707070;
+  border-color: #707070;
+  color: #3C2A10;
 }
 
 .c-search-box {

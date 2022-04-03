@@ -9,6 +9,7 @@
         width: min(100%, 429px);
         aspect-ratio: 4 / 1;
         border-radius: 20px;
-        color: v.$font-color-main;
+        border-color: v.$font-color-main;
+        color: v.$font-color-dark;
     }
 }
