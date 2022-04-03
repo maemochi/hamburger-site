@@ -193,6 +193,7 @@ li {
 
 .c-table {
   border-collapse: collapse;
+  background-color: #fff;
 }
 .c-table th, .c-table td {
   border: solid 1px #707070;
@@ -433,6 +434,21 @@ li {
 @media screen and (min-width: 600px) {
   .p-main--single__title {
     font-size: clamp(40px, 7.194vw, 60px);
+  }
+}
+.p-main--page {
+  background-image: url(../images/page_bg_sp.jpg);
+  height: 225px;
+}
+@media screen and (min-width: 600px) {
+  .p-main--page {
+    height: 500px;
+    background-image: url(../images/page_bg_tab.jpg);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .p-main--page {
+    background-image: url(../images/page_bg_pc.jpg);
   }
 }
 
