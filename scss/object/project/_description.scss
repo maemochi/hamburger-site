@@ -20,4 +20,9 @@
     &__text {
         color: v.$font-color-dark;
     }
+    &__title--single {
+        @include m.mq(tab) {
+            margin-bottom: 60px;
+        }
+    }
 }

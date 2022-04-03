@@ -11,8 +11,12 @@ body {
   }
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+h3 {
   font-weight: bold;
 }
 
@@ -154,6 +158,33 @@ li {
 
 .c-img {
   width: 100%;
+}
+
+.c-margin {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .c-margin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+.c-margin--top {
+  margin-top: 30px;
+}
+@media screen and (min-width: 600px) {
+  .c-margin--top {
+    margin-top: 60px;
+  }
+}
+.c-margin--bottom {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .c-margin--bottom {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -725,6 +756,11 @@ li {
 .p-description__text {
   color: #3C2A10;
 }
+@media screen and (min-width: 600px) {
+  .p-description__title--single {
+    margin-bottom: 60px;
+  }
+}
 
 .p-container {
   padding: 30px 20px 60px 20px;
@@ -842,21 +878,11 @@ li {
 
 .p-quotation {
   background-color: #F5F5F5;
-  margin-bottom: 30px;
   padding: 30px 20px;
 }
 @media screen and (min-width: 600px) {
   .p-quotation {
-    margin-bottom: 60px;
     padding: 50px 60px 50px 50px;
-  }
-}
-.p-quotation__text {
-  margin-bottom: 30px;
-}
-@media screen and (min-width: 600px) {
-  .p-quotation__text {
-    margin-bottom: 60px;
   }
 }
 .p-quotation a {
@@ -868,14 +894,10 @@ li {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-top: 30px;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 600px) {
   .p-product {
     gap: 20px;
-    margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -916,16 +938,6 @@ li {
 .p-headline--single h4, .p-headline--single h5, .p-headline--single h6 {
   font-size: 20px;
 }
-.p-headline--single h3, .p-headline--single h4, .p-headline--single h5, .p-headline--single h6 {
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-@media screen and (min-width: 600px) {
-  .p-headline--single h3, .p-headline--single h4, .p-headline--single h5, .p-headline--single h6 {
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-}
 
 .p-image-list {
   width: 100%;
@@ -947,6 +959,13 @@ li {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
   }
+}
+
+.p-list ol:nth-child(2) {
+  margin: 20px 0 20px 18px;
+}
+.p-list ul:nth-child(2) {
+  margin: 20px 0 20px 18px;
 }
 
 /* Foundation

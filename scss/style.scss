@@ -25,6 +25,7 @@
 @use "object/component/text";
 @use "object/component/scrollbar";
 @use "object/component/img";
+@use "object/component/margin";
 
 /* Project* -------------------- */
 @use "object/project/search-form";
@@ -42,5 +43,6 @@
 @use "object/project/product";
 @use "object/project/headline";
 @use "object/project/image-list";
+@use "object/project/list";
 
 /* Utility* -------------------- */
