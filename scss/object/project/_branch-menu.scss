@@ -48,30 +48,21 @@
         position: absolute;
         top: clamp(11px, 1.834vw, 20px);
         left: clamp(10px, 1.667vw, 19px);
-        // top: 11px;
-        // left: 10px;
         @include m.mq(tab) {
-            // font-size: 44px;
-            font-size: clamp(44px, 7.334vw, 80px);
+            font-size: 44px;
+            @include m.mq(pc) {
+                font-size: clamp(44px, 4.293vw, 80px);
+            }
         }
-        // @include m.mq(pc) {
-        //     font-size: 80px;
-        //     top: 20px;
-        //     left: 19px;
-        // }
     }
     &__line {
         position: absolute;
         width: clamp(33px, 6.875vw, 63px);
-        top: clamp(86px, 14.33vw, 160.5px);
+        top: 86px;
         left: clamp(13.5px, 2.813vw, 26.5px);
-        // top: 86px;
-        // left: 13.5px;
-        // @include m.mq(pc) {
-        //     width: 63px;
-        //     top: 160.5px;
-        //     left: 26.5px;
-        // }
+        @include m.mq(pc) {
+            top: clamp(86px, 8.39vw, 160.5px);
+        }
         &--first {
             display: none;
             @include m.mq(tab) {
@@ -81,7 +72,6 @@
     }
     &__subtitle {
         font-size: 22px;
-        // color: #3C2A10;
         color: v.$font-color-dark;
         padding: 19px 0 19px 10px;
         @include m.mq(tab) {

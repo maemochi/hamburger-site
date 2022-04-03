@@ -491,14 +491,24 @@ li {
 }
 @media screen and (min-width: 600px) {
   .p-branch-menu__title {
-    font-size: clamp(44px, 7.334vw, 80px);
+    font-size: 44px;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .p-branch-menu__title {
+    font-size: clamp(44px, 4.293vw, 80px);
   }
 }
 .p-branch-menu__line {
   position: absolute;
   width: clamp(33px, 6.875vw, 63px);
-  top: clamp(86px, 14.33vw, 160.5px);
+  top: 86px;
   left: clamp(13.5px, 2.813vw, 26.5px);
+}
+@media screen and (min-width: 1025px) {
+  .p-branch-menu__line {
+    top: clamp(86px, 8.39vw, 160.5px);
+  }
 }
 .p-branch-menu__line--first {
   display: none;
