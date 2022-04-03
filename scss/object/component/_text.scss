@@ -5,4 +5,7 @@
     font-style: normal;
     color: v.$font-color-dark;
     line-height: 23px;
+    &--bold {
+        font-weight: bold;
+    }
 }

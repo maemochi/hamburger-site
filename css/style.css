@@ -143,6 +143,9 @@ li {
   color: #3C2A10;
   line-height: 23px;
 }
+.c-text--bold {
+  font-weight: bold;
+}
 
 .c-scrollbar--hidden {
   overflow: scroll;
@@ -785,6 +788,14 @@ li {
   .p-container {
     padding-left: clamp(40px, 3.334vw, 100px);
     padding-right: clamp(40px, 3.334vw, 100px);
+  }
+}
+.p-container--single {
+  padding-bottom: 177px;
+}
+@media screen and (min-width: 600px) {
+  .p-container--single {
+    padding-bottom: clamp(228px, 38vw, 353px);
   }
 }
 
