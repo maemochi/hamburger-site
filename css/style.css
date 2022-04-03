@@ -296,6 +296,11 @@ li {
   padding: 172px 0 200px 46px;
   color: #707070;
 }
+@media screen and (min-width: 1025px) {
+  .p-sidebar {
+    padding-top: 82px;
+  }
+}
 .p-sidebar__menu {
   display: none;
 }
@@ -420,14 +425,14 @@ li {
     background-image: url(../images/single_bg_tab.jpg);
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1400px) {
   .p-main--single {
     background-image: url(../images/single_bg_pc.jpg);
   }
 }
 @media screen and (min-width: 600px) {
   .p-main--single__title {
-    font-size: 60px;
+    font-size: clamp(40px, 7.194vw, 60px);
   }
 }
 

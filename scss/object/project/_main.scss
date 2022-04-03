@@ -70,12 +70,13 @@
             height: 500px;
             background-image: url(../images/single_bg_tab.jpg);
         }
-        @include m.mq(pc) {
+        @include m.mq(xl) {
             background-image: url(../images/single_bg_pc.jpg);
         }
         &__title {
             @include m.mq(tab) {
-                font-size: 60px;
+                // font-size: 60px;
+                font-size: clamp(40px, 7.194vw, 60px);
             }
         }
     }
