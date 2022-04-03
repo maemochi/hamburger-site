@@ -1,0 +1,23 @@
+@use "../../foundation/variable" as v;
+@use "../../foundation/mixin" as m;
+
+.p-headline--single {
+    h3 {
+        font-size: 24px;
+        @include m.mq(tab) {
+            font-size: 28px;
+        }
+    }
+    h4, h5, h6 {
+        font-size: 20px;
+    }
+    h3, h4, h5, h6 {
+        margin-top: 35px;
+        margin-bottom: 35px;
+        @include m.mq(tab) {
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }
+}
+

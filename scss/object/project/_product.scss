@@ -29,4 +29,16 @@
     &__text {
         max-height: 176px;
     }
+    &__single-img {
+        // width: 80%;
+        height: 116px;
+        width: auto;
+        display: block; //中央寄せ用
+        margin: 30px auto;
+        @include m.mq(tab) {
+            height: 358px;
+            width: auto;
+            margin: 60px auto;
+        }
+    }
 }
