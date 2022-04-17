@@ -340,6 +340,9 @@ li {
   font-size: 24px;
   padding: 40px 0;
 }
+.p-sidebar__main-menu h3 {
+  font-size: 24px;
+}
 .p-sidebar__sub-menu {
   font-size: 20px;
   line-height: 44px;
